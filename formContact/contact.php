@@ -12,7 +12,7 @@ $mail->SMTPAuth   = true;
 $mail->Username   = 'furkan.kazanci.hukuk.burosu@gmail.com';
 $mail->Password   = '9.Furkankazancı';
 $mail->SMTPSecure = 'tls';
-$mail->Port       = 5500;
+$mail->Port       = 465;
 
 // Gönderen ve alıcı ayarları
 $mail->setFrom('furkan.kazanci.hukuk.burosu@gmail.com', 'Furkan Kazancı');
