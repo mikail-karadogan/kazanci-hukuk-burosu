@@ -19,8 +19,9 @@ try {
     $mail->Port       = 465;
 
     // Gönderen ve alıcı ayarları
-    $mail->setFrom('furkan.kazanci.hukuk.burosu@gmail.com', 'Furkan Kazancı');
-    $mail->addAddress($_POST['email'], $_POST['name']);
+    $mail->setFrom($_POST['email'], $_POST['name']);
+    $mail->addAddress('furkan.kazanci.hukuk.burosu@gmail.com');
+    $mail->addReplyTo($_POST['email'], $_POST['name']);
 
     // E-posta içeriği
     $mail->isHTML(true);
