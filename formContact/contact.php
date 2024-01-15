@@ -4,7 +4,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-require 'vendor/autoload.php';
+require '../vendor/autoload.php';
 
 // SMTP ayarları
 $mail = new PHPMailer(true);
@@ -15,7 +15,7 @@ try {
     $mail->SMTPAuth   = true;
     $mail->Username   = 'furkan.kazanci.hukuk.burosu@gmail.com';
     $mail->Password   = 'hidictqximqpcjys';
-    $mail->SMTPSecure = 'ssl';
+    $mail->SMTPSecure = 'tls';
     $mail->Port       = 465;
 
     // Gönderen ve alıcı ayarları
