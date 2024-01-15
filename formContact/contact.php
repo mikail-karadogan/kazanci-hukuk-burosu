@@ -6,6 +6,7 @@ use PHPMailer\PHPMailer\Exception;
 
 require '../vendor/autoload.php';
 
+if (isset($_POST['send'])) {
 // SMTP ayarları
 $mail = new PHPMailer(true);
 
@@ -32,5 +33,6 @@ try {
     echo 'E-posta başarıyla gönderildi.';
 } catch (Exception $e) {
     echo "E-posta gönderilemedi. Hata: {$mail->ErrorInfo}";
+}
 }
 ?>
