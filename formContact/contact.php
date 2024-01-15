@@ -23,8 +23,8 @@ $mail->isHTML(true);
 $mail->Subject = $_POST['subject'];
 $mail->Body    = $_POST['message'];
 
+$mail->send();
 try {
-    $mail->send();
     echo 'E-posta başarıyla gönderildi.';
 } catch (Exception $e) {
     echo "E-posta gönderilemedi. Hata: {$mail->ErrorInfo}";
