@@ -14,7 +14,7 @@ try {
     $mail->Host       = 'smtp.gmail.com'; // SMTP sunucu adresi
     $mail->SMTPAuth   = true;
     $mail->Username   = 'furkan.kazanci.hukuk.burosu@gmail.com';
-    $mail->Password   = '9.Furkankazancı';
+    $mail->Password   = 'hidictqximqpcjys';
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
 
