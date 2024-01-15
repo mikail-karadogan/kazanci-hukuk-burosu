@@ -11,7 +11,7 @@ $mail->Host       = 'smtp.gmail.com'; // SMTP sunucu adresi
 $mail->SMTPAuth   = true;
 $mail->Username   = 'furkan.kazanci.hukuk.burosu@gmail.com';
 $mail->Password   = '9.Furkankazancı';
-$mail->SMTPSecure = 'tls';
+$mail->SMTPSecure = 'ssl';
 $mail->Port       = 465;
 
 // Gönderen ve alıcı ayarları
